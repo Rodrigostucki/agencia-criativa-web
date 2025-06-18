@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -8,47 +8,63 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  line-height: 1.6;
   background-color: #f5f5f5;
+  line-height: 1.6;
 }
 
-h1, h2 {
+/* Typography */
+.heading--main {
   color: #1e1e1e;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
+.heading--sub {
+  color: #1e1e1e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Layout */
 .container {
   max-width: 1200px;
+  margin: 0 auto;
   padding: 2rem;
-  margin: auto;
 }
 
-header {
+.section {
+  margin-top: 3rem;
+}
+
+/* Header */
+.header {
   background-color: #101010;
-  color: white;
+  color: #fff;
 }
 
-.header-container {
+.header__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
+.header__logo {
   height: 50px;
 }
 
-.menu ul {
+.header__nav-list {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-.menu a {
-  color: white;
+.header__nav-link {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Banner */
 .banner {
   background: url('img/banner.jpg') center/cover no-repeat;
   height: 80vh;
@@ -56,35 +72,31 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(47, 42, 56);
 }
 
-.banner-texto h1 {
+.banner__text h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
-.banner-texto p {
+.banner__text p {
   font-size: 1.5rem;
 }
 
-section {
-  margin-top: 3rem;
-}
-
-.servicos {
-  background-color: #ffffff;
+/* Serviços */
+.services {
+  background-color: #fff;
   padding: 2rem;
 }
 
-.grid-servicos {
+.services__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.servico {
+.services__item {
   background-color: #e0e0e0;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -92,14 +104,22 @@ section {
   font-size: 1.2rem;
 }
 
-.contato form {
+/* Depoimentos */
+.testimonials__quote {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* Contato */
+.contact__form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-form input, form textarea {
+.contact__input,
+.contact__textarea {
   padding: 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -107,7 +127,7 @@ form input, form textarea {
   width: 100%;
 }
 
-form button {
+.contact__button {
   padding: 1rem;
   background-color: #101010;
   color: white;
@@ -117,11 +137,12 @@ form button {
   font-size: 1rem;
 }
 
-form button:hover {
+.contact__button:hover {
   background-color: #333;
 }
 
-footer {
+/* Footer */
+.footer {
   text-align: center;
   padding: 2rem;
   background-color: #101010;
@@ -129,23 +150,24 @@ footer {
   margin-top: 3rem;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
-  .header-container {
+  .header__container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .menu ul {
+  .header__nav-list {
     flex-direction: column;
     width: 100%;
     gap: 0.5rem;
   }
 
-  .banner-texto h1 {
+  .banner__text h1 {
     font-size: 2rem;
   }
 
-  .banner-texto p {
+  .banner__text p {
     font-size: 1rem;
   }
 }

@@ -7,68 +7,70 @@
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <img src="img/logo.png" alt="Logo Agência Criativa Web" class="logo" />
-      <nav class="menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
+  <header class="header">
+    <div class="container header__container">
+      <img src="img/logo.png" alt="Logo Agência Criativa Web" class="header__logo" />
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#home" class="header__nav-link">Home</a></li>
+          <li><a href="#sobre" class="header__nav-link">Sobre Nós</a></li>
+          <li><a href="#servicos" class="header__nav-link">Serviços</a></li>
+          <li><a href="#depoimentos" class="header__nav-link">Depoimentos</a></li>
+          <li><a href="#contato" class="header__nav-link">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <section id="home" class="banner">
-    <div class="banner-texto">
-      <h1>Bem-vindo à Agência Criativa Web</h1>
+    <div class="banner__text">
+      <h1 class="heading--main">Bem-vindo à Agência Criativa Web</h1>
       <p>Transformamos ideias em experiências digitais incríveis.</p>
     </div>
   </section>
 
-  <section id="sobre" class="container">
-    <h2>Sobre Nós</h2>
+  <section id="sobre" class="container section">
+    <h2 class="heading--sub">Sobre Nós</h2>
     <p>
       Somos uma agência apaixonada por criatividade e inovação. Ajudamos empresas a se destacarem no mundo digital por meio de soluções visuais marcantes.
     </p>
   </section>
 
-  <section id="servicos" class="servicos">
-    <h2>Serviços</h2>
-    <div class="grid-servicos">
-      <div class="servico">🎨 Design Gráfico</div>
-      <div class="servico">💻 Desenvolvimento Web</div>
-      <div class="servico">🔖 Branding e Identidade Visual</div>
-      <div class="servico">📱 UX/UI Design</div>
-      <div class="servico">📢 Marketing Digital</div>
-      <div class="servico">🧩 Consultoria Criativa</div>
+  <section id="servicos" class="services section">
+    <div class="container">
+      <h2 class="heading--sub">Serviços</h2>
+      <div class="services__grid">
+        <div class="services__item">🎨 Design Gráfico</div>
+        <div class="services__item">💻 Desenvolvimento Web</div>
+        <div class="services__item">🔖 Branding e Identidade Visual</div>
+        <div class="services__item">📱 UX/UI Design</div>
+        <div class="services__item">📢 Marketing Digital</div>
+        <div class="services__item">🧩 Consultoria Criativa</div>
+      </div>
     </div>
   </section>
 
-  <section id="depoimentos" class="container">
-    <h2>Depoimentos</h2>
-    <blockquote>"A equipe da Agência Criativa Web superou nossas expectativas!" – Cliente A</blockquote>
-    <blockquote>"Serviço profissional e atendimento excelente!" – Cliente B</blockquote>
+  <section id="depoimentos" class="container section">
+    <h2 class="heading--sub">Depoimentos</h2>
+    <blockquote class="testimonials__quote">"A equipe da Agência Criativa Web superou nossas expectativas!" – Cliente A</blockquote>
+    <blockquote class="testimonials__quote">"Serviço profissional e atendimento excelente!" – Cliente B</blockquote>
   </section>
 
-  <section id="contato" class="container contato">
-    <h2>Contato</h2>
-    <p>Endereço: Rua Antonio, 123 - Cidade </p>
+  <section id="contato" class="container section">
+    <h2 class="heading--sub">Contato</h2>
+    <p>Endereço: Rua Antomio, 123 - Cidade</p>
     <p>Telefone: (11) 99999-9999</p>
     <p>Email: contato@agenciacriativaweb.com</p>
 
-    <form>
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu e-mail" required />
-      <textarea placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
+    <form class="contact__form">
+      <input type="text" class="contact__input" placeholder="Seu nome" required />
+      <input type="email" class="contact__input" placeholder="Seu e-mail" required />
+      <textarea class="contact__textarea" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="contact__button">Enviar</button>
     </form>
   </section>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Agência Criativa Web. Todos os direitos reservados.</p>
   </footer>
 </body>
